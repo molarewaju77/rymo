@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/*general styles*/
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: #fb774b;
+}
+button{
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  margin-top: 15px;
+}
+button:hover
+{
+  background-color: #3a3833;
+}
+
+
+
+/*main styles*/
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body.show::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color:rgba(0, 0, 0, 0.4) ;
+  right: 0;
+}
+#section1 nav 
+{
+  display: flex;
+  gap: 150px;
+  justify-content: space-around;
+  height: 90px;
+  border-bottom: 1px solid rgb(173, 167, 167);
+  align-items: center;
+  background-color: white;
+}
+#section1 nav span
+{
+  display: flex;
+}
+#section1 nav ul{
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}
+#section1 nav ul li
+{
+  list-style-type: none;
+}
+#section1 nav ul li a
+{
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+#section1 nav ul li a:hover
+{
+  color:rgb(255, 127, 80) ;
+}
+#section1 nav .icon-wrapper
+{
+  gap:10px;
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
+}
+#section1 nav .icon-wrapper i 
+{
+  font-size: 19px;
+}
+#section1 nav .logo
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#section1 nav .logo i
+{
+  font-size: 19px;
+  font-weight: bold;
+  visibility: hidden;
+}
+#section1 nav .logo img
+{
+  height:50px;
+  width: max-content;
+}
+
+#section1 #sidebar
+{
+  position:absolute;
+  top: 0 ;
+  left: 0;
+  width: 77%;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-100%);
+  background-color:white;
+  transition: all 0.7s ease;
+  overflow-x: hidden;
+  animation: 0.5s ease-in-out;
+}
+#section1 #sidebar.show
+{
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+#section1 #sidebar ul
+{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0 0 30px;
+  height: 100vh;
+  gap: 35px;
+  align-items: start;
+}
+#section1 .home span
+{
+  color: coral;
+}
+#section1 .home
+{  background-image: url(img/back.jpg);
+  background-size: cover;
+  padding: 200px;
+  background-position: center;
+}
+#section1 .home .text
+{
+  width: 400px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:912px) {
+  #section1 nav span ul
+  {
+  display: none;
+  }
+  #section1 nav .logo i
+  {
+  font-size: 19px;
+  font-weight: bold;
+  visibility: visible;
+  }
+  #section1 nav 
+{
+  display: flex;
+  gap: none;
+  justify-content: space-between;
+  padding: 0 30px;
+  
+}
+}
+@media screen and (max-width:450px) {
+  #section1 .home
+  {
+  height: 820px; 
+  padding: 200px 20px;
+  }
+  #section1 nav span ul
+  {
+  display: none;
+  }
+  #section1 nav .logo i
+  {
+  font-size: 19px;
+  font-weight: bold;
+  visibility: visible;
+  }
+  #section1 nav 
+  {
+  padding: 0 15px;
+  gap: 0px;
+  }
+  #section1 .home
+{  
+  padding: 200px 20px;
+  overflow-x: hidden;
+  background-position: center;
+}
+#section1 .home .text
+{
+  width: 76.5%;
+}
+
+
+
+
+}
+
+
