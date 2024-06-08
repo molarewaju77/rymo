@@ -155,12 +155,6 @@ body.removebg::before
   font-weight: bold;
   visibility: hidden;
 }
-#section1 nav .logo img
-{
-  height:50px;
-  width: max-content;
-}
-
 #section1 #sidebar
 {
   position:fixed;
