@@ -170,13 +170,6 @@ body.removebg::before
   z-index: 1000;
   animation: 0.5s ease-in-out;
 }
-.open
-{
-  visibility: hidden !important;
-  opacity: 0 !important;
-  left: 0 !important;
-  transform: translateX(-100%) !important;
-}
 #section1 #sidebar.show
 {
   visibility: visible;
@@ -265,7 +258,9 @@ body.removebg::before
   text-align: right;
 }
 
-#section2 .new-container  .new:hover .text
+#section2 .new-container  .new:hover .text,
+#section2 .new-container  .new:focus .text,
+#section2 .new-container  .new:active .text
 {
   background-color:rgba(245, 178, 178, 0.7);
 }
