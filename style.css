@@ -195,6 +195,7 @@ body.removebg::before
   background-size: cover;
   background-position: top 50px center;
   height:100vh;
+  background-attachment: fixed;
   overflow: hidden;
   width: 100%;
 }
@@ -403,6 +404,7 @@ justify-content: center;
   background-size: cover;
   background-position:top 70px center;  
   width: 100%;  
+  position: relative;
   background-attachment: fixed;
 }
 #section4 .text
