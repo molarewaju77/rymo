@@ -196,7 +196,18 @@ body.removebg::before
   background-position: top 50px center;
   height:100vh;
   background-attachment: fixed;
+  overflow: hidden;
   width: 100%;
+}
+#section1::before
+{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-attachment: fixed;
 }
 #section1 .home .text
 {
