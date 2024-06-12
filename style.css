@@ -570,7 +570,7 @@ footer .copyright span
 } 
 .copyright span div:hover
 {
-  background-color: #FB774B;
+  background-color: #FB774B !important;
 }
 .copyright span div:hover i
 {
