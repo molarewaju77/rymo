@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .tab_item {
+        display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+.tab_btn
+{
+    padding: 1.2rem 2.2rem;
+  font-size: var(--fontSize-2);
+  font-family: var(--font_family-3);
+  font-weight: var(--weight-bold-700);
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.tab_item:not(.active_tab) {
+  display: none;
+}
+.tabs_container .tab_btn.active_tab,
+.tabs_container .tab_btn:hover {
+  box-shadow: inset var(--shadow-3);
+  background-color: red;
+}
+</style>
+<body>
+    <div class="tab_items">
+        <div class="tab_item active_tab" content id="tab_1">
+            <div class="product">
+                <div class="image-wrapper">
+                    <img src="img/shop/12.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>Knit Cap</p>
+                    <h4 class="price">$25.00</h4>
+                    <button class="buy-btn">BUY NOW</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="tab_item" content id="tab_2">
+            <div class="product">
+                <div class="image-wrapper">
+                    <img src="img/shop/12.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>Knit Cap</p>
+                    <h4 class="price">.00</h4>
+                    <button class="buy-btn">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="tab_item" content id="tab_3">
+            <div class="product">
+                <div class="image-wrapper">
+                    <img src="img/shop/12.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>Knit Cap</p>
+                    <h4 class="price">.08880</h4>
+                    <button class="buy-btn">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="tab_item" content id="tab_4">
+            <div class="product">
+                <div class="image-wrapper">
+                    <img src="img/shop/12.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>Knit Cap</p>
+                    <h4 class="price">.00</h4>
+                    <button class="buy-btn">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabs_container tab_shop">
+        <div class="tab_btn active_tab" data-target="#tab_1">1</div>
+        <div class="tab_btn" data-target="#tab_2">2</div>
+        <div class="tab_btn" data-target="#tab_3">3</div>
+        <div class="tab_btn" data-target="#tab_4">4</div>
+    </div>
+    
+
+
+
+
+
+
+    <script>
+        // ============= product tabs settings ==============
+const tabs = document.querySelectorAll("[data-target]"),
+  tabContents = document.querySelectorAll("[content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("active_tab");
+    });
+
+    target.classList.add("active_tab");
+
+    tabs.forEach((tab) => {
+      tab.classList.remove("active_tab");
+    });
+    tab.classList.add("active_tab");
+  });
+});
+    </script>
+</body>
+
+</html>

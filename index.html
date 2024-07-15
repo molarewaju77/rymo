@@ -13,8 +13,8 @@
         <div id="sidebar">
             <ul>
                 <li onclick="HidesideBar()"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-                <li><a href="#section1" onclick="togglesiebar()">Home</a></li>
-                <li><a href="#" onclick="togglesiebar()">Shop</a></li>
+                <li><a href="#section1" onclick="togglesiebar()" class="active">Home</a></li>
+                <li><a href="shop.html" onclick="togglesiebar()">Shop</a></li>
                 <li><a href="" onclick="togglesiebar()">Blog</a></li>
                 <li><a href="" onclick="togglesiebar()">About</a></li>
                 <li><a href="" onclick="togglesiebar()">Contact Us</a></li>
@@ -27,19 +27,23 @@
             </div>
             <span>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Shop</a></li>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact Us</a></li>
                 </ul>
                 <div class="icon-wrapper">
                     <i>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="M784-120 532-372q-30 
+                             24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
                     </i>
-                    <i>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg>
-                    </i>
+                    <div class="cart-count-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class=" feather-shopping-bag" id="cart-icon"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 
+                        0"></path></svg>
+                        <span id="cart-count">0</span>
+                    </div>
                 </div>  
             </span>
         </nav>
@@ -103,72 +107,56 @@
             <p>Here you can check out our newproducts with fair price on rymo.</p>
             <div class="product-wrapper">
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/featured/1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </span>
-                        <p>Sport Boots</p>
-                        <h4 class="price">$123.00</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/featured/1.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Sport Boots</p>
+                    <h4 class="product-price">$123.00</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/featured/2.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </span>
-                        <p>Casual Shoes</p>
-                        <h4 class="price">$140.00</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/featured/2.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Casual Shoes</p>
+                    <h4 class="product-price">$140.00</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/featured/3.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </span>
-                        <p>Casual Backpack</p>
-                        <h4 class="price">$95.00</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/featured/3.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Casual Backpack</p>
+                    <h4 class="product-price">$95.00</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/featured/4.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </span>
-                        <p>Knit Cap</p>
-                        <h4 class="price">$25.00</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/featured/4.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Knit Cap</p>
+                    <h4 class="product-price">$25.00</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
             </div>
         </section>
@@ -187,72 +175,56 @@
             <p>Check out Rymo's collection of dresses and jumpsuits at a fair price.</p>
             <div class="product-wrapper">
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/clothes/1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </span>
-                        <p>Dress</p>
-                        <h4 class="price">$123.00</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/clothes/1.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </span>
+                    <p class="product-title">Dress</p>
+                    <h4 class="product-price">$123.00</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/clothes/2.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </span>
-                        <p>Dress</p>
-                        <h4 class="price">$80.00</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/clothes/2.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Dress</p>
+                    <h4 class="product-price">$80.00</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/clothes/3.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <p>Dress</p>
-                        <h4 class="price">$55.00</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/clothes/3.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <p class="product-title">Dress</p>
+                    <h4 class="product-price">$55.00</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/clothes/4.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <p>Dress</p>
-                        <h4 class="price">$99.00</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/clothes/4.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <p class="product-title">Dress</p>
+                    <h4 class="product-price">$99.00</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
             </div>
         </section>   
@@ -263,72 +235,56 @@
             <p>Here you will find the best men's watches at a fair price.</p>
             <div class="product-wrapper">
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/watches/1.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <p>Dive Watch</p>
-                        <h4 class="price">$43.90</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/watches/1.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <p class="product-title">Dive Watch</p>
+                    <h4 class="product-price">$43.90</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/watches/2.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </span>
-                        <p>Dress Watch</p>
-                        <h4 class="price">$76.89</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/watches/2.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </span>
+                    <p class="product-title">Dress Watch</p>
+                    <h4 class="product-price">$76.89</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/watches/3.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </span>
-                        <p>Silver Watch</p>
-                        <h4 class="price">$85.00</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/watches/3.jpg" alt="">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </span>
+                    <p class="product-title">Silver Watch</p>
+                    <h4 class="product-price">$85.00</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/watches/4.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <p>Chronograph Watch</p>
-                        <h4 class="price">$47.90</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/watches/4.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <p class="product-title">Chronograph Watch</p>
+                    <h4 class="product-price">$47.90</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
             </div>
         </section>   
@@ -339,72 +295,56 @@
             <p>Here at Rymo you will find men's shoes of various types at a fair price.</p>
             <div class="product-wrapper">
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/shoes/8.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </span>
-                        <p>Casual Shoes</p>
-                        <h4 class="price">$65.89</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/shoes/8.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </span>
+                    <p class="product-title">Casual Shoes</p>
+                    <h4 class="product-price">$65.89</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/shoes/7.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </span>
-                        <p>Black Shoes</p>
-                        <h4 class="price">$78.49</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/shoes/7.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Black Shoes</p>
+                    <h4 class="product-price">$78.49</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/shoes/6.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <p>Classic Shoes</p>
-                        <h4 class="price">$59.90</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/shoes/6.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <p class="product-title">Classic Shoes</p>
+                    <h4 class="product-price">$59.90</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
                 <div class="product">
-                    <div class="image-wrapper">
-                        <img src="img/shoes/5.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fafa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <p>Leather Shoes</p>
-                        <h4 class="price">$63.99</h4>
-                        <button class="buy-btn">BUY NOW</button>
-                    </div>
+                    <img src="img/shoes/5.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fafa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <p class="product-title">Leather Shoes</p>
+                    <h4 class="product-price">$63.99</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
             </div>
         </section>   
@@ -471,6 +411,22 @@
             </span>
         </div>
     </footer>
+
+
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>   
+        <div class="cart-content">
+        </div>
+        <!--TOTAL-->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div> 
+        </div>
+        <!--BUY BUTTON-->
+        <button type="button" class="btn-buy">CHECKOUT</button>
+        <!--CART CLOSE-->
+        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black" id="cart-close"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>     
+</div>
     <script src="index.js"></script>
     <script>    </script>
 </body>
