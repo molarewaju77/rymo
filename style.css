@@ -521,14 +521,25 @@ nav .icon-wrapper i
 }
 #section4
 {
-  background-image: url(img/banner/2.jpg);
+  position: relative;
   height: 70vh;
-  background-size: cover;
   background-position:top 70px center;  
   width: 100%;  
   position: relative;
+}
+#section4::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(img/banner/2.jpg);
+  left: 0;
   background-attachment: fixed;
   -webkit-background-attachment: fixed !important;
+  bottom: 0;
+  background-position:top 70px center;  
+  background-size: cover;
 }
 #section4 .text
 {
