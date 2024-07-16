@@ -699,12 +699,12 @@ footer .copyright span
   color:  rgb(153, 153, 153);
   font-size: 14px;
 }
-.copyright span 
+.copyright .socials
 {
   display: flex;
   gap: 13px;
 }
-.copyright span div
+.copyright .socials .social
 {
   cursor: pointer;
   width: 40px;
@@ -716,11 +716,15 @@ footer .copyright span
   align-items: center;
   transition: 0.3s ease;
 } 
-.copyright span div:hover
+.copyright .socials .social a
+{
+  color: black;
+}
+.copyright .social:hover
 {
   background-color: #FB774B !important;
 }
-.copyright span div:hover i
+.copyright .social:hover a
 {
   color: white;
 }
