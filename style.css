@@ -716,7 +716,8 @@ footer .copyright span
   align-items: center;
   transition: 0.3s ease;
 } 
-.copyright .socials .social a
+.copyright .socials .social a,
+.copyright .socials .social a i
 {
   color: black;
 }
@@ -724,7 +725,8 @@ footer .copyright span
 {
   background-color: #FB774B !important;
 }
-.copyright .social:hover a
+.copyright .social:hover a,
+.copyright .social:hover a i
 {
   color: white;
 }
