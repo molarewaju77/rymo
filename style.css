@@ -856,7 +856,7 @@ footer .copyright span
 @media screen and (max-width:450px) {
   .cart-content
   {
-  max-height: 50%;
+  max-height: 55%;
   }
   .cart-count-wrapper #cart-count
   {
