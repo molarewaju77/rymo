@@ -699,12 +699,7 @@ footer .copyright span
   color:  rgb(153, 153, 153);
   font-size: 14px;
 }
-.copyright .socials
-{
-  display: flex;
-  gap: 13px;
-}
-.copyright .socials .social
+.copyright .social-wrapper .social
 {
   cursor: pointer;
   width: 40px;
@@ -716,8 +711,7 @@ footer .copyright span
   align-items: center;
   transition: 0.3s ease;
 } 
-.copyright .socials .social a,
-.copyright .socials .social a i
+.copyright .social-wrapper a
 {
   color: black;
 }
