@@ -701,8 +701,8 @@ footer .copyright span
 }
 .copyright .social-wrapper 
 {
-  display: flex;
-  gap: 13px;
+  display: flex !important;
+  gap: 13px !important;
 }
 .copyright .social-wrapper .social
 {
