@@ -1,38 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Product Details</title>
+    <style>
+        .small-image-group
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        .small-img-col
+        {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+        .image-gallery 
+        {
+            max-width: 400px;
+        }
+        .image-gallery .big-image
+        {
+            display: block;
+            width: 100%;
+            padding-bottom: 15px;
+        }
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        .image-gallery-details
+        {
+            width: 38%;
+        }
+        .image-gallery-details h4
+        {
+            margin: 1.25rem 0 1.25rem 0;
+        }
+        .image-gallery-details h3
+        {
+            padding: 1rem 0;
+        }
+        .image-gallery-details select
+        {
+            display: block;
+            padding: 5px 10px;
+            margin: 0px 0;
+        }
+        .image-gallery-details input
+        {
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .image-gallery-details input:focus
+        {
+            outline: none;
+        }
+        .image-gallery-details .buy-btn
+        {
+            background: #fb77fb;
+            opacity: 1;
+            transition: 0.3s all;
+            padding: 10px 25px;
+        }
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        .sproduct-wrapper
+        {
+            display: flex;
+            gap: 30px;
+            padding: 3.5rem 0 0 120px;
+        }
+        nav 
+        {
+        padding: 0 120px;
+        }
+        .products
+        {
+            padding: 80px 0 90px 0;
+        }
 
-        <link rel="stylesheet" href="style.css">
 
-        <style>
-            /* internal styles */
-        </style>
+    /*=============SINGLE PRODUCT PAGE==========*/
+        @media screen and (max-width:912px) {
+        .sproduct-wrapper
+        {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 3.5rem 40px;
+        }
+        .image-gallery 
+        {
+            max-width:100%;
+        }
+        .image-gallery .big-image
+        {
+            display: block;
+            width: 100%;
+            padding-bottom: 15px;
+        }
+        nav
+        {
+            padding: 0 40px !important;
+        }
+        .image-gallery-details
+        {
+            width: 100%;
+        }
+        }
 
-    </head>
+        @media screen and (max-width:430px) {
+            nav
+        {
+            padding: 0 20px !important;
+        }
+        .sproduct-wrapper
+        {
+        padding: 3.5rem 20px;
+        }
+        }
+    /*=============END==========*/
+    </style>
+</head>
+<body>
+    <div>
+        <div id="sidebar">
+            <ul>
+                <li onclick="HidesideBar()"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li><a href="index.html" onclick="togglesiebar()">Home</a></li>
+                <li><a href="shop.html" onclick="togglesiebar()" class="active">Shop</a></li>
+                <li><a href="blog.html" onclick="togglesiebar()">Blog</a></li>
+                <li><a href="" onclick="togglesiebar()">About</a></li>
+                <li><a href="" onclick="togglesiebar()">Contact Us</a></li>
+            </ul>
+        </div>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-bars" onclick="showsideBar()"></i>
+                <img src="img/logo1.png" alt="">
+            </div>
+            <span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <div class="icon-wrapper">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                    </i>
+                    <div class="cart-count-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class=" feather-shopping-bag" id="cart-icon"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 
+                        0"></path></svg>
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>  
+            </span>
+        </nav>
+    </div>
+    <div class="sproduct" style="padding-top: 90px !important;">
+        <div class="sproduct-wrapper">
+            <div class="image-gallery">
+                <img src="img/shop/1.jpg" alt="" class="big-image" width="100%" id="MainImg">
+                <div class="small-image-group">
+                   <div class="small-img-col">
+                        <img src="img/shop/1.jpg" alt="" class="small-img" width="100%">
+                   </div>
+                    <div class="small-img-col">
+                        <img src="img/shop/24.jpg" alt="" class="small-img" width="100%">
+                   </div>
+                    <div class="small-img-col">
+                        <img src="img/shop/25.jpg" alt="" class="small-img" width="100%">
+                   </div>
+                   <div class="small-img-col">
+                    <img src="img/shop/26.jpg" alt="" class="small-img" width="100%">
+               </div>
+                </div>
+            </div>
+            <div class="image-gallery-details">
+                <h6>HOME / T Shirt</h6>
+                <h3>Men's Fashion T Shirt</h3>
+                <h2>$139.00</h2>
+                <select>
+                    <option>Select SIze</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>Small</option>
+                    <option>Large</option>
+                </select>
+                <input type="number" value="1">
+                <button class="buy-btn">Add To Cart</button>
+                <h4>Product Details</h4>
+                <span>THe Gildan Ultra Cotton T-Shirt is made from a substanial 6.0 0z. per sq. yd. fabric 
+                constructed from 100% cotton, this classic fit preshrunk jersey 
+                knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a 
+                seamless double-neddle collar, and available in a range of 
+                colours, it offers it all in the ultimate head-turning package.</span>
+            </div>
+        </div>
+        <section class="products">
+            <h2>Related Products</h2>
+            <div class="product-wrapper">
+                <div class="product" onclick="window.location.href='sproduct.html'">
+                    <img src="img/featured/1.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Sport Boots</p>
+                    <h4 class="product-price">$123.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" onclick="window.location.href='sproduct.html'">
+                    <img src="img/featured/2.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Casual Shoes</p>
+                    <h4 class="product-price">$140.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" onclick="window.location.href='sproduct.html'">
+                    <img src="img/featured/3.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Casual Backpack</p>
+                    <h4 class="product-price">$95.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" onclick="window.location.href='sproduct.html'">
+                    <img src="img/featured/4.jpg" alt="" class="product-img">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Knit Cap</p>
+                    <h4 class="product-price">$25.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="text">
+            <div class="wrapper one">
+                <img src="img/logo2.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nostrum temporibus nulla voluptas inventore totam, facilis quasi illum</p>
+            </div>
+            <div class="wrapper two">
+                <h4>Featured</h4>
+                <li>
+                    <a href="">MEN</a>
+                    <a href="">WOMEN</a>
+                    <a href="">BOYS</a>
+                    <a href="">GIRLS</a>
+                    <a href="">NEW ARRIVALS</a>
+                    <a href="">SHOES</a>
+                    <a href="">CLOTHES</a>
+                </li>
+            </div>
+            <div class="wrapper three"> 
+                <h4>Contact us</h4>
+                <p>ADDRESS <br>
+                   <span>123 Street Name, City, US</span>
+                </p>
+                <p>PHONE<br>
+                    <span>(123) 456-7890</span>
+                 </p>
+                 <p>EMAIL<br>
+                    <span>rymo@mail.com</span>
+                 </p>
+            </div>
+            <div class="wrapper four"> 
+                <h4>Instagram</h4>
+                <div>
+                    <img src="img/insta/1.jpg" alt="">
+                    <img src="img/insta/2.jpg" alt="">
+                    <img src="img/insta/3.jpg" alt="">
+                    <img src="img/insta/4.jpg" alt="">
+                    <img src="img/insta/5.jpg" alt="">
+                    <img src="img/insta/6.jpg" alt="">           
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>
+                <img src="img/payment.png" alt="">
+            </span>
+            <span>
+                <p>rymo eCommerce © 2022. All Rights Reserved</p>
+            </span>
+            <div class="social-wrapper">
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <body>
+    <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>   
+            <div class="cart-content">
+            </div>
+            <!--TOTAL-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div> 
+            </div>
+            <!--BUY BUTTON-->
+            <button type="button" class="btn-buy">CHECKOUT</button>
+            <!--CART CLOSE-->
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black" id="cart-close"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>     
+    </div>
+    <script>
+        var MainImg = document.getElementById('MainImg');
+        var smallimg = document.getElementsByClassName('small-img');
 
-
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-            integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-            integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
-            crossorigin="anonymous"></script>
-
-        <script>
-            // script for image change on click
-        </script>
-    </body>
-
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+    <script src="index.js">
+    </script>
+</body>
 </html>
