@@ -396,7 +396,6 @@ nav .icon-wrapper i
   left: 50%;
   width: 447px;
   height: 447px;
-  z-index: 2000;
   cursor: pointer;
   padding: 190px 10px;
   overflow-y: hidden;
@@ -783,7 +782,226 @@ footer .copyright span
 /*shop styles END*/
 
 
+
+
+
+
+/*=============BLOG STYLES==========*/
+#blog
+{
+  margin-top: 80px;
+  padding: 60px 0 100px 0;
+}
+#blog h1
+{
+  font-size: 29px;
+  padding-bottom: 7px;
+  padding-left:120px;
+}
+#blog hr
+{
+  color: #FB774B;
+  height: 3px;
+  border: 0;
+  margin-left: 120px;
+  width: 35px;
+}
+.blog-wrapper
+{
+  width: 540px;
+  cursor: pointer;
+  text-align: center; 
+}
+.blog-wrapper .image-wrapper
+{
+  width: 540px;
+  position: relative;
+  overflow: hidden;
+  max-height: 304px;
+}
+.blog-wrapper .image-wrapper img
+{
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: 0.3s ease;
+}
+.blog-wrapper .image-wrapper img:hover
+{
+  transform: scale(1.3) rotate(-10deg);
+  opacity: 0.8;
+}
+.blog-wrapper p
+{
+  font-size: 22px;
+  color:rgb(33, 37, 41);
+  padding-top: 15px;
+  transition: 0.2s all;
+}
+.blog-wrapper h5
+{
+  font-size: 16px;
+  padding-top: 5px;
+}
+.blog-wrapper:hover p
+{
+  color: #fb774b;
+}
+#blog .banner
+{
+  width: 1110px;
+  height: 310px;
+}
+#blog .banner img
+{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.blog-wrapper.other .image-wrapper
+{
+  width: 350px;
+  position: relative;
+  overflow: hidden;
+  max-height: 282px;
+  border-radius: none !important;
+}
+.blog-wrapper.other p
+{
+  font-size: 18px;
+  color:rgb(33, 37, 41);
+  padding-top: 15px;
+  transition: 0.2s all;
+}
+.blog-wrapper.other
+{
+  width: 350px;
+  cursor: pointer;
+  text-align: left; 
+}
+#blog .posts
+{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  padding-top: 65px;
+  row-gap: 60px;
+  column-gap: 30px;
+}
+
+
+
+/*=============BLOG STYLES ENDS==========*/
+
+
+/*=============BLOG PAGE==========*/
+@media screen and (max-width:1024px) {
+  .blog-wrapper
+{
+  width: 420px;
+  cursor: pointer;
+  text-align: center; 
+}
+.blog-wrapper .image-wrapper
+{
+  width: 420px;
+  position: relative;
+  overflow: hidden;
+  max-height: 304px;
+}
+nav 
+{
+padding: 0 75px;
+}
+#blog h1
+{
+  padding-left:75px;
+}
+#blog hr
+{
+  margin-left: 75px;
+}
+#blog .banner
+{
+  width: 870px;
+}
+
+}
+/*=============END==========*/
+
+/*=============BLOG PAGE==========*/
+@media screen and (max-width:1440px) {
+.blog-nav nav 
+{
+padding: 0 75px;
+}
+#blog h1
+{
+  padding-left:140px;
+}
+#blog hr
+{
+  margin-left: 140px;
+}
+
+}
+
+
+/*=============END==========*/
+
 @media screen and (max-width:912px) {
+  
+  /*=============BLOG PAGE==========*/
+  .blog-wrapper.other
+  {
+  width: 43%;
+  }
+  .blog-wrapper.other .image-wrapper
+  {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  }
+  .blog-wrapper
+  {
+    width: 43%;
+    cursor: pointer;
+    text-align: center; 
+  }
+  .blog-wrapper .image-wrapper
+  {
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    max-height: 304px;
+  }
+  #blog .posts
+  {
+  column-gap: 4%;
+  }
+  #blog h1
+  {
+  padding-left:0;
+  margin-left: 0;
+  width: 90%;
+  margin: 0 auto;
+  }
+  #blog .line-wrapper
+  {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #blog .line-wrapper hr
+  {
+    margin: 0;
+  }
+  #blog .banner
+  {
+  width:90%;
+  }
+
+  /*=============END==========*/
+
   nav span ul
   {
   display: none;
@@ -800,7 +1018,7 @@ footer .copyright span
   display: flex;
   gap: none;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 30px !important;
   }
   #section1 .home .text
   {
@@ -856,6 +1074,7 @@ footer .copyright span
   top: 20px; 
   right: 28px; 
   }
+
 }  
 
 @media screen and (max-width:450px) {
@@ -879,7 +1098,7 @@ footer .copyright span
   }
    nav 
   {
-  padding: 0 15px;
+  padding: 0 15px !important;
   gap: 0px;
   }
   #section1 .home .text
@@ -977,6 +1196,33 @@ footer .copyright span
   }
   /*==SHOP PAFGE RESPONSIVENESS MAX-WIDTH 450PX END==*/
 
+    /*=============BLOG PAGE==========*/
+    .blog-wrapper.other
+    {
+    height: 100%;
+    width: 93%;
+    }
+    .blog-wrapper.other .image-wrapper
+    {
+    width: 100%;
+    height: 500px;
+    }
+    .blog-wrapper
+    {
+      width: 93%;
+      cursor: pointer;
+      text-align: center; 
+    }
+    #blog .posts
+    {
+    column-gap: 4%;
+    }
+    #blog .banner
+    {
+    width:95%;
+    height: 120px;
+    }  
+      /*=============END==========*/
 }
 
 
