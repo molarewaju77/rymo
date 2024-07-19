@@ -155,6 +155,9 @@ function handle_changeItemQuantity() {
 function handle_buyOrder(){
     if(itemsAdded.length <= 0){
         alert("There is No Order to Place Yet \nPlease Make an Order first.");
+        cart.classList.remove("active"); // Close the cart
+        document.body.classList.remove('show'); // Remove the body class
+        document.body.classList.remove('fixedbg'); // Remove the body class
         return;
     }
     const cartContent = cart.querySelector(".cart-content");
@@ -168,6 +171,7 @@ function handle_buyOrder(){
     // Close the cart
     cart.classList.remove("active"); // Close the cart
     document.body.classList.remove('show'); // Remove the body class
+    document.body.classList.remove('fixedbg'); // Remove the body class
     update(); // Call update to recalculate totals, etc.
     update();
 }

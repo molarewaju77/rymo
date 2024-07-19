@@ -349,6 +349,46 @@
             </div>
         </section>   
     </div>
+    <div class="test-box">
+        <div class="img-wrapper">
+            <img src="./img/banner/1.jpg" alt="">
+        </div>
+    </div>
+    <style>
+        .img-wrapper
+        {
+            width: 600px;
+            height: 200px;
+            cursor: pointer;
+            position: relative;
+        }
+        .img-wrapper::before
+        {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            transition: opacity 0.5s ease;
+            opacity: 0;
+            height: 100%;
+            left: 0;
+            background-color: rgba(255, 0, 0, 0.312);
+        }
+        .img-wrapper:hover.img-wrapper::before
+        {
+           opacity: 1;  
+        }
+        .img-wrapper img
+        {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        
+    </style>
     <footer>
         <div class="text">
             <div class="wrapper one">
@@ -414,7 +454,7 @@
     <div class="cart">
     <!--CART CLOSE-->
     <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black" id="cart-close"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>  
-        <h2 class="cart-title">Your Cart</h2>   
+        <h2 class="cart-title">Your Cart(<span id="cart-count">0</span>)</h2>   
         <div class="cart-content">
         </div>
         <!--TOTAL-->
