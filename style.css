@@ -218,18 +218,13 @@ body.show::before
   height: 100vh;
   overflow-y: hidden;
 }
-body.removebg::before
+body.fixedbg
 {
-  content: '';
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  background-color:transparent;
   right: 0;
-  z-index: 2000;
-  height: 100vh;
-  overflow-y: hidden;
 }
  nav 
 {
