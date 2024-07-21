@@ -379,12 +379,14 @@
              bottom: 0;
              left: 0;
              background-color: rgba(255, 0, 0, 0.642); 
-             transition: 0.5s ease;
+             transition: opacity 0.5s ease;
             visibility: hidden;
+            opacity: 0;
         }
         .img-wrapper:hover .overlay
         {
             visibility: visible;
+            opacity: 1 !important;
         }
 
         
