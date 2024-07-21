@@ -388,7 +388,7 @@ nav .icon-wrapper i
 }
 .new-container .new img::before
 {
-  content: '';
+  content: " ";
   position: absolute;
   top: 0;
   right: 0;
