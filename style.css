@@ -398,6 +398,7 @@ nav .icon-wrapper i
   height: 447px;
   cursor: pointer;
   padding: 190px 10px;
+  background-color: transparent;
   overflow-y: hidden;
   transition: 0.3s ease all;
 }
