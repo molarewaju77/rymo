@@ -355,9 +355,25 @@
         </div>
         <div class="text">
             <h1>hello</h1>
+            <button type="button" onclick="window.location.href='shop.html'">SHop Now</button>
         </div>
     </div>
     <style> 
+    .test-box
+    {
+        width: 300px;
+        height: 311px;
+        overflow-y: hidden;
+        position: relative;
+    }
+    .test-box .text
+    {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
     .container
     {
         position: relative;
@@ -382,10 +398,10 @@
         opacity: 0;
         transition: opacity 0.5s ease;
     }
-    .container:hover::before
+    .test-box:hover .container::before
     {
         visibility: visible;
-        opacity: 1;
+        opacity: 1; 
     }
         
     </style>
