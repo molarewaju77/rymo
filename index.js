@@ -121,7 +121,10 @@ function handle_addCartItem() {
 
 function updateCartCount() {
     const cartCountElement = document.getElementById("cart-count");
+    const cartTitleCountElement = document.getElementById("cart-title-count");
+
     cartCountElement.innerHTML = itemCount; // Update the count display
+    cartTitleCountElement.innerHTML = itemCount; // Update the cart title count display
 
     // Show or hide the cart count based on itemCount
     if (itemCount === 0) {
