@@ -378,7 +378,7 @@ nav .icon-wrapper i
 
 .new-container .new
 {
-  overflow: hidden;
+  overflow-y: hidden;
   position: relative;
   width: 447px;
   height: 447px;
@@ -388,20 +388,21 @@ nav .icon-wrapper i
   width: 100%;
   height:100%;
   display: block;
+  z-index: 4;
 } 
 #section2 .new-container .text
 {
   position: absolute;
   top: 50%;
-  transform: translate(-50%,-50%);
   left: 50%;
+  transform: translate(-50% , -50%);
   cursor: pointer;
-  height: 447px;
+  height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 9;
   transition: 0.3s ease all;
 }
-.new-container .new:hover .text
+.new-container .new:hover .new-container .text
 {
   background-color: rgba(255, 0, 0, 0.32);
 }
