@@ -397,6 +397,7 @@ nav .icon-wrapper i
   left: 50%;
   cursor: pointer;
   width: 100%;
+  z-index: 1;
   height: 100%;
   transition: 0.3s ease all;
 }
