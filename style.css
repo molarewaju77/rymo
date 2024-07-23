@@ -371,61 +371,67 @@ nav .icon-wrapper i
   flex-wrap: wrap;
   justify-content: center;
 }
-
-
-
-
-
 .new-container .new
 {
-  overflow-y: hidden;
+  overflow: hidden;
   position: relative;
+  cursor: pointer;
   width: 447px;
   height: 447px;
 }
-.new-container .new img
+.new .img-wrapper
 {
-  width: 100%;
-  height:100%;
-  display: block;
-  z-index: 4;
+  position: relative;
+  width: 447px;
+  object-fit: contain;
+  height: 447px; 
 } 
-#section2 .new-container .text
+.new .img-wrapper::before
+{
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.32);
+  transition: opacity 0.5s ease;
+}
+.new .img-wrapper img
+{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.new-container .new .text
 {
   position: absolute;
   top: 50%;
+  width: 100%;
+  text-align: center;
   left: 50%;
   transform: translate(-50% , -50%);
-  cursor: pointer;
-  height: 100%;
-  width: 100%;
-  z-index: 9;
-  transition: 0.3s ease all;
 }
-.new-container .new:hover .new-container .text
+.new-container .new.one .text
 {
-  background-color: rgba(255, 0, 0, 0.32);
+  text-align: left;
+  padding-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-#section2 .new-container .text.two
-{
-  text-align: center;
-}
-#section2 .new-container .text.three
+.new-container .new.three .text
 {
   text-align: right;
+  padding-right: 10px;
 }
-.new-container .new .shop-btn
+.new:hover .img-wrapper::before
+{
+  visibility: visible;
+  opacity: 1;
+}
+.new .text .shop-btn
 {
   font-size: 14px;
   font-weight: 500;
@@ -437,10 +443,10 @@ nav .icon-wrapper i
   padding-bottom: 3px;
   width: max-content;
 }
-.new-container .new .shop-btn:hover
+.new .text .shop-btn:hover
 {
   color: white;
-  border-color: white;
+  border-color: white; 
 }
 #section3
 {
@@ -1050,19 +1056,16 @@ padding: 0 75px;
   {
     gap: 40px;
   }
-  #section2 .new-container .new
+  .new-container .new
   {
-  position: relative;
   width: 99%;
-  overflow-y: hidden;
-  height: 100%;
+  height: initial;
   }
-  #section2 .new-container .text
+  .new .img-wrapper
   {
-  width: 100%;
-  height: 100%;
-  padding: 260px 10px;
-  }
+  width:100%;
+  height: 100%; 
+  } 
   #section4 .text {
   padding-left: 30px;
   }
@@ -1132,16 +1135,6 @@ padding: 0 75px;
   #section1
   {
   background-position: top 70px center;
-  }
-  #section2 .new-container .new
-  {
-  position: relative;
-  width: 99%;
-  height:360px;
-  }
-  #section2 .new-container .text
-  {
-  padding: 140px 10px
   }
   #section4 .text h1
   {
