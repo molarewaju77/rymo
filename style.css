@@ -411,6 +411,8 @@ nav .icon-wrapper i
 {
   position: absolute;
   top: 50%;
+  height: auto;
+  cursor: pointer !important;
   width: 100%;
   text-align: center;
   left: 50%;
