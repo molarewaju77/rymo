@@ -84,6 +84,7 @@
                     <h2>Extreme Rare Sneakers</h2>
                     <button class="shop-btn" onclick="window.location.href = 'shop.html'">SHOP NOW</button>
                 </div>
+                <div class="overlay"></div>
             </div>
             <div class="new two">
                 <img src="img/new/2.jpg" alt="">
@@ -352,6 +353,14 @@
     <div class="test-box">
         <div class="img-wrapper">
             <img src="./img/banner/1.jpg" alt="">
+            <div class="tex" style="position: absolute !important;z-index: 5;  top: 50%;
+            transform: translate(-50%,-50%);
+            left: 50%; height: 100%; width: 100%;">
+                <h2>MID SEASONS'S SALE</h2>
+                <h1>Autumn Collection <br>
+                UP TO 20% OFF</h1>
+                <button class="shop-btn" onclick="window.location.href='shop.html'">SHOP NOW</button>
+            </div>
             <div class="overlay"></div>
         </div>
     </div>
@@ -359,12 +368,14 @@
         .img-wrapper
         {
             width: 600px; 
-            height: 200px;
+            height: 300px;
             position: relative;
+            overflow-y: hidden;
         }
         .img-wrapper img
         {
             width: 100%;
+            z-index: 1;
             height: 100%;
             display: block;
         }
@@ -380,6 +391,7 @@
              left: 0;
              background-color: rgba(255, 0, 0, 0.642); 
              transition: opacity 0.5s ease;
+             transition: 0.9s all;
             visibility: hidden;
             opacity: 0;
         }
@@ -392,13 +404,6 @@
         
         
     </style>
-                <div class="new two" style="position: relative; overflow-y: hidden;">
-                    <img src="img/new/2.jpg" alt="" style="position: relative; z-index: 2;">
-                    <div class="text two" style="position: absolute;z-index: 6;">
-                        <h2>Awesome Blank Outfit</h2>
-                        <button class="shop-btn" onclick="window.location.href = 'shop.html'">SHOP NOW</button>
-                    </div>
-                </div>
     <footer>
         <div class="text">
             <div class="wrapper one">

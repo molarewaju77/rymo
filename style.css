@@ -389,12 +389,11 @@ nav .icon-wrapper i
   width: 100%;
   height:100%;
   display: block;
-  position: absolute;
-  cursor: pointer;
+  position: relative;
 } 
 #section2 .new-container .text
 {
-  position: relative;
+  position: absolute;
   top: 50%;
   transform: translate(-50%,-50%);
   left: 50%;
@@ -402,15 +401,9 @@ nav .icon-wrapper i
   height: 447px;
   cursor: pointer;
   padding: 190px 10px;
-  background-color: transparent;
   overflow-y: hidden;
   transition: 0.3s ease all;
 }
-#section2 .new-container .text:hover
-{
-  background-color: rgba(255, 0, 0, 0.15) !important;
-}
-
 
 
 
