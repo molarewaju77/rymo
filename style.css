@@ -376,8 +376,7 @@ nav .icon-wrapper i
 
 
 
-
-#section2 .new-container .new
+.new-container .new
 {
   overflow: hidden;
   position: relative;
@@ -389,7 +388,6 @@ nav .icon-wrapper i
   width: 100%;
   height:100%;
   display: block;
-  position: relative;
 } 
 #section2 .new-container .text
 {
@@ -397,12 +395,14 @@ nav .icon-wrapper i
   top: 50%;
   transform: translate(-50%,-50%);
   left: 50%;
-  width: 447px;
-  height: 447px;
   cursor: pointer;
-  padding: 190px 10px;
-  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
   transition: 0.3s ease all;
+}
+.new-container .new:hover .text
+{
+  background-color: red;
 }
 
 
