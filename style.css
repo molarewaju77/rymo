@@ -276,6 +276,7 @@ nav ul li a.active
   display: flex;
   padding-left: 40px;
   align-items: center;
+  vertical-align: middle;
 } 
 nav .icon-wrapper i 
 {
@@ -319,10 +320,17 @@ nav .icon-wrapper i
 {
   display: flex;
   flex-direction: column;
-  padding: 30px 0 0 30px;
   height: 100vh;
   gap: 35px;
   align-items: start;
+}
+#sidebar ul a
+{
+  padding: 30px 0 0 30px;
+}
+#sidebar .close-sidebar
+{
+  padding: 30px 0 0 30px;
 }
 #sidebar ul a.active
 {
@@ -907,12 +915,110 @@ footer .copyright span
 }
 /*=============BLOG STYLES ENDS==========*/
 
-/*=============PRODUCT DETAILS STYLES==========*/
 
 
-/*=============PRODUCT DETAILS END==========*/
+
+/*=============LOGIN/SIGNIN STYLES==========*/
+
+.log-container 
+{
+  width: 470px;
+  height: 580px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.log-container .logo img
+{
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+#form-container
+{
+  width: 64%;
+}
+#form-container input
+{
+  width: 100%;
+  height: 50px;
+  outline: none;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+}
+#form-container input::placeholder
+{
+ 
+  font-size: 16px;
+  color:rgba(0, 0, 0, 0.87);
+}
+#form-container .forget-password
+{
+  color:rgb(63, 81, 181);
+  display: block;
+  padding-top: 20px;
+  text-align: right;
+  font-size: 14px;
+  padding-bottom: 0;
+  text-decoration: none;
+}
+#form-container .forget-password:hover
+{
+  text-decoration: underline;
+}
+#form-container button
+{
+  font-size: 14px;
+  font-weight: 500;
+  background-color:rgb(255, 127, 80);
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+#form-container button:hover
+{
+  background-color:rgb(226, 113, 73); 
+}
+#form-container p,
+#form-container a
+{
+  font-size: 14px;
+}
+#form-container a
+{
+  color:rgb(63, 81, 181);
+  text-decoration: none;
+}
+#form-container a:hover
+{
+  text-decoration: underline;
+}
+.log-container .to-page
+{
+  position: absolute;
+  left: 0;
+  top: 5px;
+  padding: 6px 20px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  font-size: 20px;
+}
+.log-container .to-page:hover
+{
+  background-color: #F5F5F5;
+}
 
 
+/*============= END==========*/
 
 
 
@@ -1028,8 +1134,24 @@ padding: 0 75px;
   {
   width:90%;
   }
+  .exit-icon 
+  {
+    display: none;
+  }
 
   /*=============END==========*/
+
+
+
+  /*LOGIN/SIGNUP PAGE*/
+
+  .log-container 
+  {
+  width: 70%;
+  height: 80vh;
+  }
+
+  /*END*/
 
   nav span ul
   {
@@ -1238,7 +1360,27 @@ padding: 0 75px;
     width:95%;
     height: 120px;
     }  
-      /*=============END==========*/
+
+  /*=============END==========*/
+
+  /*LOGIN/SIGNUP PAGE*/
+
+  .log-container 
+  {
+  width: 88%;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /*END*/
+
 }
 
 
