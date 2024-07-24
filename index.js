@@ -118,6 +118,12 @@ function handle_addCartItem() {
     update();
     updateCartCount(); // Update the cart count display
 }
+function showSearchBar(){
+    const SearchBar = document.getElementById('#sidebar');
+    SearchBar.addEventListener(clcik , () =>{
+        
+    } )
+}
 
 function updateCartCount() {
     const cartCountElement = document.getElementById("cart-count");
