@@ -948,6 +948,10 @@ footer .copyright span
 #form-container
 {
   width: 64%;
+  overflow-y: hidden;
+  height: 100%;
+  position: relative;
+  height: max-content;
 }
 #form-container input
 {
