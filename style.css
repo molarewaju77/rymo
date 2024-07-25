@@ -944,6 +944,8 @@ footer .copyright span
 {
   padding-top: 35px;
   padding-bottom: 10px;
+  display: block;
+  position: relative;
 }
 #form-container
 {

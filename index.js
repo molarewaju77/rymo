@@ -118,12 +118,6 @@ function handle_addCartItem() {
     update();
     updateCartCount(); // Update the cart count display
 }
-function showSearchBar(){
-    const SearchBar = document.getElementById('#sidebar');
-    SearchBar.addEventListener(clcik , () =>{
-        
-    } )
-}
 
 function updateCartCount() {
     const cartCountElement = document.getElementById("cart-count");
@@ -236,3 +230,18 @@ tab.addEventListener("click", () => {
     tab.classList.add("active_tab");
 });
 });
+
+// ============= LOGIN/SIGNUP PAGE ==============
+document.getElementById('create-account-link').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('signup-form').style.display = 'block';
+});
+
+document.getElementById('login-link').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('signup-form').style.display = 'none';
+    document.getElementById('login-form').style.display = 'block';
+});
+
+// ============= END==============
