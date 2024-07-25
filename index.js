@@ -45,6 +45,7 @@ if(document.readyState == "loading"){
 
 //========== START ===========
 function start() {
+loadCartFromLocalStorage();
  addEvents();
 }
 
@@ -108,6 +109,9 @@ function handle_addCartItem() {
         
     }
 
+    // Save to localStorage
+    saveCartToLocalStorage();
+
     //Add product to Cart
     let cartBoxElement = CartBoxComponent(title, price, imgSrc);
     let newNode = document.createElement("div");
@@ -134,6 +138,9 @@ function updateCartCount() {
     }
 }
 
+function saveCartToLocalStorage() {
+    localStorage.setItem("cartItems", JSON.stringify(itemsAdded));
+}
 function handle_removeCartItem() {
     this.parentElement.remove();
     itemsAdded = itemsAdded.filter(
@@ -142,6 +149,7 @@ function handle_removeCartItem() {
     );
 
     itemCount--; // Decrement item count
+    saveCartToLocalStorage();
     updateCartCount(); // Update the cart count display
     update();
 }
@@ -151,7 +159,7 @@ function handle_changeItemQuantity() {
         this.value = 1;
     }
     this.value = Math.floor(this.value); // to keep it integer
-
+    saveCartToLocalStorage();
     update();
 }
 
@@ -169,6 +177,7 @@ function handle_buyOrder(){
     itemsAdded = [];
     itemCount = 0; // Reset item count
     
+    saveCartToLocalStorage();
     updateCartCount(); // Update the cart count display
 
     // Close the cart
@@ -193,6 +202,23 @@ function updateTotal() {
     total = total.toFixed(2);   
 
     totalElement.innerHTML = "$" + total;
+}
+
+function loadCartFromLocalStorage() {
+    const savedCart = JSON.parse(localStorage.getItem("cartItems")) || [];
+    itemsAdded = savedCart;
+    itemCount = itemsAdded.length;
+
+    const cartContent = cart.querySelector(".cart-content");
+    cartContent.innerHTML = "";
+    itemsAdded.forEach(item => {
+        let cartBoxElement = CartBoxComponent(item.title, item.price, item.imgSrc);
+        let newNode = document.createElement("div");
+        newNode.innerHTML = cartBoxElement;
+        cartContent.appendChild(newNode);
+    });
+
+    updateCartCount();
 }
 
 
