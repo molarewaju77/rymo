@@ -190,7 +190,7 @@ button:hover
 {
   position: absolute;
   top: 20px; 
-  right: 35px; 
+  right: 74px; 
   background: red; 
   color: white; 
   cursor: pointer;
@@ -946,6 +946,8 @@ footer .copyright span
   padding-bottom: 20px;
   display: block;
   position: relative;
+  height: initial;
+  width: initial;
 }
 #form-container
 {
@@ -953,7 +955,6 @@ footer .copyright span
   overflow-y: hidden;
   height: 100%;
   position: relative;
-  height: max-content;
 }
 #form-container input
 {
