@@ -328,6 +328,12 @@ nav .icon-wrapper i
 {
   padding: 30px 0 0 30px;
 }
+#sidebar ul hr
+{
+  width: 100%;
+  outline: none;
+  margin: -15px 0;
+}
 #sidebar .close-sidebar
 {
   padding: 30px 0 0 30px;
@@ -953,11 +959,20 @@ footer .copyright span
   border-bottom: 1px solid black;
   font-size: 16px;
 }
-#form-container input::placeholder
+ input::placeholder
 {
  
   font-size: 16px;
   color:rgba(0, 0, 0, 0.87);
+  transition: all 0.2s;
+}
+input:focus::placeholder,
+input:not(:placeholder-shown)::placeholder
+{
+  font-size: 14px;
+  color: #333;
+  transform: translateY(-20px);
+
 }
 #form-container .forget-password
 {
@@ -1368,17 +1383,13 @@ padding: 0 75px;
   .log-container 
   {
   width: 88%;
-  height: 80vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 85vh;
+  overflow-y: hidden;
   }
-
+  #form-container
+  {
+  width: 80%;
+  }
   /*END*/
 
 }

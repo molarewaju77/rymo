@@ -13,12 +13,13 @@
     <div>
         <div id="sidebar">
             <ul>
-                <li onclick="HidesideBar()"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li onclick="HidesideBar()" class="close-sidebar"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
                 <li><a href="index.html" onclick="togglesiebar()">Home</a></li>
                 <li><a href="shop.html" onclick="togglesiebar()" class="active">Shop</a></li>
                 <li><a href="blog.html" onclick="togglesiebar()">Blog</a></li>
-                <li><a href="" onclick="togglesiebar()">About</a></li>
-                <li><a href="" onclick="togglesiebar()">Contact Us</a></li>
+                <li><a href="" onclick="togglesiebar()">About Us</a></li>
+                <hr>
+                <li><a href="login.html" onclick="togglesiebar()">Log in</a></li>
             </ul>
         </div>
         <nav>
@@ -31,8 +32,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="shop.html" class="active">Shop</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">About Us</a></li>
                 </ul>
                 <div class="icon-wrapper">
                     <i>
@@ -43,6 +43,9 @@
                         stroke-linejoin="round" class=" feather-shopping-bag" id="cart-icon"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 
                         0"></path></svg>
                         <span id="cart-count">0</span>
+                    </div>
+                    <div class="exit-icon">
+                        <svg stroke="currentColor" onclick="window.location.href='login.html'" height="24px" width="24px" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" color="#444" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(68, 68, 68);"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
                     </div>
                 </div>  
             </span>
