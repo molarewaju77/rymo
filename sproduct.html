@@ -18,7 +18,7 @@
         }
         .small-img-col
         {
-            flex-basis: 24%;
+            flex-basis: 23.5%;
             cursor: pointer;
         }
         .image-gallery 
@@ -28,10 +28,14 @@
         .image-gallery .big-image
         {
             display: block;
-            width: 100%;
+            width: 400px;
+            height: 465px;
             padding-bottom: 15px;
         }
-
+        .image-gallery .small-img
+        {
+            height: 108px;
+        }
         .image-gallery-details
         {
             width: 38%;
@@ -67,7 +71,7 @@
             background-color: #fb774b;
             opacity: 1;
             transition: 0.3s all;
-            padding: 10px 25px;
+            padding: 15px 25px;
         }
 
         .sproduct-wrapper
@@ -75,10 +79,6 @@
             display: flex;
             gap: 30px;
             padding: 3.5rem 0 0 120px;
-        }
-        nav 
-        {
-        padding: 0 120px;
         }
         .products
         {
@@ -98,11 +98,13 @@
         .image-gallery 
         {
             max-width:100%;
+            width: 100%;
         }
         .image-gallery .big-image
         {
             display: block;
             width: 100%;
+            height: 670px;
             padding-bottom: 15px;
         }
         nav
@@ -113,10 +115,22 @@
         {
             width: 100%;
         }
+        .image-gallery .small-img
+        {
+            height: 150px;
+        }
         }
 
         @media screen and (max-width:430px) {
-            nav
+        .image-gallery .small-img
+        {
+            height: 108px;
+        }
+        .image-gallery .big-image
+        {
+            height: 465px;    
+        }
+        nav
         {
             padding: 0 20px !important;
         }
@@ -186,14 +200,14 @@
                         <img src="img/shop/25.jpg" alt="" class="small-img" width="100%">
                    </div>
                    <div class="small-img-col">
-                    <img src="img/shop/26.jpg" alt="" class="small-img" width="100%">
+                    <img src="" alt="" class="small-img" width="100%">
                </div>
                 </div>
             </div>
             <div class="image-gallery-details">
-                <h6>HOME / T Shirt</h6>
-                <h3>Men's Fashion T Shirt</h3>
-                <h2>$139.00</h2>
+                <h6>HOME / <span class="product-category">gbjdghjdhj</span></h6>
+                <h3 class="product-title">Men's Fashion T Shirt</h3>
+                <h2 class="product-price">$139.00</h2>
                 <select>
                     <option>Select SIze</option>
                     <option>XL</option>
@@ -204,7 +218,7 @@
                 <input type="number" value="1">
                 <div class="product" style="display: none;">
                     <p class="product-title">Dark Blue T-shirt</p>
-                    <h4 class="product-price">$37.00</h4>
+                    <h4 class="product-price"></h4>
                 </div>
                 <img src="img/shop/1.jpg" alt="" class="product-img" style="display: none;">
 

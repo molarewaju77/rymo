@@ -508,7 +508,8 @@ nav .icon-wrapper i
 {
   width: 300px;
   text-align: center;
-  overflow-y: hidden;
+  overflow: hidden;
+  position: relative;
   gap: 23px;
   /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
 }
@@ -520,8 +521,37 @@ nav .icon-wrapper i
 {
   width: 300px;
   height: 354px;
+  position: relative;
   transition: 0.3s all;
   padding-bottom: 23px;
+}
+.product .view
+{
+  color: #FA916B;
+  cursor: pointer;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  position: absolute;
+  left: 50%;
+  top: 33.5%;
+  transform: translate(-50% , -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition:opacity 0.3s ease-in-out;
+  background-color:white;
+  transition: all 0.3s;
+}
+.product .view:hover
+{
+  background-color: #FA916B;
+  color: white;
+}
+.product:hover .view
+{
+  visibility: visible;
+  opacity: 1;
 }
 .product span
 {
