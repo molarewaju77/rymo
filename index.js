@@ -470,6 +470,97 @@
             "price": "$900.99",
             "productImg": "img/watches/1.jpg"
         },
+        "36" : {
+            "name": "Dress Watch",
+            "category": "WATCH",
+            "bigImage": "img/watches/2.jpg",
+            "smallImages": [
+                "img/watches/2.jpg",
+                "img/watches/1.jpg",
+                "img/watches/3.jpg",
+                "img/watches/4.jpg"
+            ],
+            "price": "$806.89",
+            "productImg": "img/watches/2.jpg"
+        },
+        "37" : {
+            "name": "Silver Watch",
+            "category": "WATCH",
+            "bigImage": "img/watches/3.jpg",
+            "smallImages": [
+                "img/watches/3.jpg",
+                "img/watches/1.jpg",
+                "img/watches/2.jpg",
+                "img/watches/4.jpg"
+            ],
+            "price": "$775.00",
+            "productImg": "img/watches/3.jpg"
+        },
+        "38" : {
+            "name": "Chronograph Watch",
+            "category": "WATCH",
+            "bigImage": "img/watches/4.jpg",
+            "smallImages": [
+                "img/watches/4.jpg",
+                "img/watches/1.jpg",
+                "img/watches/2.jpg",
+                "img/watches/3.jpg"
+            ],
+            "price": "$1009.90",
+            "productImg": "img/watches/4.jpg"
+        },
+        "39" : {
+            "name": "Casual Shoes",
+            "category": "SHOE",
+            "bigImage": "img/shoes/8.jpg",
+            "smallImages": [
+                "img/shoes/8.jpg",
+                "img/shoes/7.jpg",
+                "img/shoes/6.jpg",
+                "img/shoes/5.jpg"
+            ],
+            "price": "$65.89",
+            "productImg": "img/shoes/8.jpg"
+        },
+        "40" : {
+            "name": "Brown Shoes",
+            "category": "SHOE",
+            "bigImage": "img/shoes/7.jpg",
+            "smallImages": [
+                "img/shoes/7.jpg",
+                "img/shoes/5.jpg",
+                "img/shoes/8.jpg",
+                "img/shoes/6.jpg"
+            ],
+            "price": "$78.50",
+            "productImg": "img/shoes/7.jpg"
+        },
+        "41" : {
+            "name": "Classic Shoes",
+            "category": "SHOE",
+            "bigImage": "img/shoes/6.jpg",
+            "smallImages": [
+                "img/shoes/6.jpg",
+                "img/shoes/8.jpg",
+                "img/shoes/5.jpg",
+                "img/shoes/7.jpg"
+            ],
+            "price": "$59.90",
+            "productImg": "img/shoes/6.jpg"
+        },
+        "42" : {
+            "name": "Leather Shoes",
+            "category": "SHOE",
+            "bigImage": "img/shoes/5.jpg",
+            "smallImages": [
+                "img/shoes/5.jpg",
+                "img/shoes/7.jpg",
+                "img/shoes/6.jpg",
+                "img/shoes/8.jpg"
+            ],
+            "price": "$63.99",
+            "productImg": "img/shoes/5.jpg"
+        }
         // Add more products as needed
     };
 

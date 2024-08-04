@@ -18,7 +18,7 @@
         }
         .small-img-col
         {
-            flex-basis: 23.5%;
+            flex-basis: 23%;
             cursor: pointer;
         }
         .image-gallery 
@@ -124,11 +124,11 @@
         @media screen and (max-width:430px) {
         .image-gallery .small-img
         {
-            height: 108px;
+            height: 95px;
         }
         .image-gallery .big-image
         {
-            height: 465px;    
+            height: 430px;    
         }
         nav
         {
@@ -188,16 +188,16 @@
     <div class="sproduct" style="padding-top: 90px !important;">
         <div class="sproduct-wrapper">
             <div class="image-gallery">
-                <img src="img/shop/1.jpg" alt="" class="big-image" width="100%" id="MainImg">
+                <img src="" alt="" class="big-image" width="100%" id="MainImg">
                 <div class="small-image-group">
                    <div class="small-img-col">
-                        <img src="img/shop/1.jpg" alt="" class="small-img" width="100%">
+                        <img src="" alt="" class="small-img" width="100%">
                    </div>
                     <div class="small-img-col">
-                        <img src="img/shop/24.jpg" alt="" class="small-img" width="100%">
+                        <img src="" alt="" class="small-img" width="100%">
                    </div>
                     <div class="small-img-col">
-                        <img src="img/shop/25.jpg" alt="" class="small-img" width="100%">
+                        <img src="" alt="" class="small-img" width="100%">
                    </div>
                    <div class="small-img-col">
                     <img src="" alt="" class="small-img" width="100%">
@@ -205,9 +205,9 @@
                 </div>
             </div>
             <div class="image-gallery-details">
-                <h6>HOME / <span class="product-category">gbjdghjdhj</span></h6>
-                <h3 class="product-title">Men's Fashion T Shirt</h3>
-                <h2 class="product-price">$139.00</h2>
+                <h6>HOME / <span class="product-category"></span></h6>
+                <h3 class="product-title"></h3>
+                <h2 class="product-price"></h2>
                 <select>
                     <option>Select SIze</option>
                     <option>XL</option>
@@ -217,25 +217,25 @@
                 </select>
                 <input type="number" value="1">
                 <div class="product" style="display: none;">
-                    <p class="product-title">Dark Blue T-shirt</p>
+                    <p class="product-title"></p>
                     <h4 class="product-price"></h4>
                 </div>
-                <img src="img/shop/1.jpg" alt="" class="product-img" style="display: none;">
+                <img src="" alt="" class="product-img" style="display: none;">
 
                 <button class="buy-btn add-cart">Add To Cart</button>
                 <h4>Product Details</h4>
-                <span>THe Gildan Ultra Cotton T-Shirt is made from a substanial 6.0 0z. per sq. yd. fabric 
-                constructed from 100% cotton, this classic fit preshrunk jersey 
-                knit provides unmatched comfort with each wear. Featuring a taped neck and shoulder, and a 
-                seamless double-neddle collar, and available in a range of 
-                colours, it offers it all in the ultimate head-turning package.</span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quaerat eum commodi vero assumenda, 
+            repudiandae architecto perspiciatis quam totam. Natus numquam perferendis amet tempora, eligendi nam qui 
+            cumque non tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </span>
             </div>
         </div>
         <section class="products">
             <h2>Related Products</h2>
             <div class="product-wrapper">
-                <div class="product">
-                    <img src="img/featured/1.jpg" alt="" class="product-img" onclick="window.location.href='sproduct.html'">
+                <div class="product" data-id="27">
+                    <img src="img/featured/1.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="27"></i>
                     <span>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -247,8 +247,9 @@
                     <h4 class="product-price">$123.00</h4>
                     <button class="add-cart">BUY NOW</button>
                 </div>
-                <div class="product">
-                    <img src="img/featured/2.jpg" alt="" class="product-img" onclick="window.location.href='sproduct.html'">
+                <div class="product" data-id="28">
+                    <img src="img/featured/2.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="28"></i>
                     <span>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -260,8 +261,9 @@
                     <h4 class="product-price">$140.00</h4>
                     <button class="add-cart">BUY NOW</button>
                 </div>
-                <div class="product">
-                    <img src="img/featured/3.jpg" alt="" class="product-img" onclick="window.location.href='sproduct.html'">
+                <div class="product" data-id="29">
+                    <img src="img/featured/3.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="29"></i>
                     <span>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -273,8 +275,9 @@
                     <h4 class="product-price">$95.00</h4>
                     <button class="add-cart">BUY NOW</button>
                 </div>
-                <div class="product">
-                    <img src="img/featured/4.jpg" alt="" class="product-img" onclick="window.location.href='sproduct.html'">
+                <div class="product" data-id="30">
+                    <img src="img/featured/4.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="30"></i>
                     <span>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -282,8 +285,8 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </span>
-                    <p class="product-title">Knit Cap</p>
-                    <h4 class="product-price">$25.00</h4>
+                    <p class="product-title">Comfy Knit Cap</p>
+                    <h4 class="product-price">$25.99</h4>
                     <button class="add-cart">BUY NOW</button>
                 </div>
             </div>
