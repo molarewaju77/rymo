@@ -665,11 +665,12 @@ if (document.readyState === "loading") {
 function start() {
     loadCartFromLocalStorage();
     addEvents();
+    updateTotal(); // Ensure total is updated when the page loads
 }
 
 function update() {
     addEvents();
-    updateTotal();
+    updateTotal(); // Ensure total is updated whenever update is called
 }
 
 function addEvents() {
@@ -822,6 +823,7 @@ function loadCartFromLocalStorage() {
     });
 
     updateCartCount();
+    updateTotal(); // Ensure total is updated when loading from localStorage
 }
 
 function CartBoxComponent(title, price, imgSrc) {
@@ -836,6 +838,7 @@ function CartBoxComponent(title, price, imgSrc) {
         <i class='bx bxs-trash-alt cart-remove'></i>
     </div>`;
 }
+
 
 // Product tabs settings
 const tabs = document.querySelectorAll("[data-target]"),
