@@ -473,6 +473,7 @@ nav .icon-wrapper i
   row-gap: 35px;
   flex-wrap: wrap;
   padding: 60px 0 0px 0;
+  overflow: hidden;
 }
 .products h2
 {
@@ -608,6 +609,7 @@ nav .icon-wrapper i
 {
   padding-left:130px;
   position: absolute;
+  overflow: hidden;
   top: 50%;
   transform: translateY(-50%);
 }
