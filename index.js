@@ -17,7 +17,7 @@
             icon.addEventListener('click', handleEyeIconClick);
         });
     });
-
+ 
     // Example product data
     const products = {
         "1": {
@@ -604,15 +604,6 @@
     window.onload = populateProductPage;
 })();
 
-
-
-
-
-
-
-
-
-
 // Main JavaScript logic
 
 
@@ -639,6 +630,7 @@ function togglesiebar() {
 }
 
 // Cart functions
+// Existing Cart functions
 const cartIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
 const closeCart = document.querySelector("#cart-close");
@@ -655,6 +647,12 @@ closeCart.addEventListener("click", () => {
     document.body.classList.remove('fixedbg');
 });
 
+// Add event listener for the pageshow event to refresh cart data
+window.addEventListener('pageshow', () => {
+    loadCartFromLocalStorage();
+    update();
+});
+
 // Start when the document is ready
 if (document.readyState === "loading") {
     document.addEventListener('DOMContentLoaded', start);
@@ -665,12 +663,11 @@ if (document.readyState === "loading") {
 function start() {
     loadCartFromLocalStorage();
     addEvents();
-    updateTotal(); // Ensure total is updated when the page loads
 }
 
 function update() {
     addEvents();
-    updateTotal(); // Ensure total is updated whenever update is called
+    updateTotal();
 }
 
 function addEvents() {
@@ -823,7 +820,6 @@ function loadCartFromLocalStorage() {
     });
 
     updateCartCount();
-    updateTotal(); // Ensure total is updated when loading from localStorage
 }
 
 function CartBoxComponent(title, price, imgSrc) {
@@ -838,6 +834,12 @@ function CartBoxComponent(title, price, imgSrc) {
         <i class='bx bxs-trash-alt cart-remove'></i>
     </div>`;
 }
+
+// Ensure the cart is updated when navigating back from the single product page
+window.addEventListener('pageshow', () => {
+    loadCartFromLocalStorage();
+    update();
+});
 
 
 // Product tabs settings
