@@ -939,6 +939,7 @@ footer .copyright span
 }
 #blog .posts
 {
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap; 
   justify-content: center;
