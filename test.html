@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Search</title>
+    <style>
+        .product-wrapper, .suggested-products-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product, .suggested-product {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        #no-results {
+            display: none;
+            color: red;
+            font-weight: bold;
+        }
+        #clear-filter {
+            margin-left: 10px;
+            color: blue;
+            cursor: pointer;
+        }
+        #clear-all-filters {
+            display: none;
+            margin: 20px 0;
+            color: blue;
+            cursor: pointer;
+        }
+        #suggested-products {
+            display: none;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        #suggested-products-header {
+            display: none;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-bar">
+        <input type="text" id="search-input" required style="width: 95.5%; height: 40px; position: relative;" placeholder="Search...">
+        <button id="search-button">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" font-size="20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" stroke-miterlimit="10" stroke-width="32" d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"></path>
+                <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div id="no-results">
+        Product not found. <a id="clear-filter" href="#">Clear Filter</a>
+    </div>
+
+    <div id="suggested-products-header">
+        <h1>Suggested Products:</h1>
+    </div>
+
+
+    <div id="clear-all-filters">Clear All Filters</div>
+
+    <div class="product-wrapper" id="product-wrapper">
+        <div class="product" data-id="6" data-aos="fade-up">
+            <img src="img/shop/6.jpg" alt="" class="product-img">
+            <i class="fa fa-eye view" data-id="6"></i>
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <p class="product-title">Red Coat</p>
+            <h4 class="product-price">$140.00</h4>
+            <button class="add-cart">BUY NOW</button>
+        </div>
+        <div class="product" data-id="7" data-aos="fade-up">
+            <img src="img/shop/7.jpg" alt="" class="product-img">
+            <i class="fa fa-eye view" data-id="7"></i>
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <p class="product-title">Retro Groove Shoe</p>
+            <h4 class="product-price">$95.00</h4>
+            <button class="add-cart">BUY NOW</button>
+        </div>
+        <div class="product" data-id="8" data-aos="fade-up">
+            <img src="img/shop/8.jpg" alt="" class="product-img">
+            <i class="fa fa-eye view" data-id="8"></i>
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <p class="product-title">Navy Blue Coat</p>
+            <h4 class="product-price">$130.80</h4>
+            <button class="add-cart">BUY NOW</button>
+        </div>
+        <div class="product" data-id="9" data-aos="fade-up">
+            <img src="img/shop/9.jpg" alt="" class="product-img">
+            <i class="fa fa-eye view" data-id="9"></i>
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <p class="product-title">Sling Backpack</p>
+            <h4 class="product-price">$39.50</h4>
+            <button class="add-cart">BUY NOW</button>
+        </div>
+        <div class="product" data-id="10" data-aos="fade-up">
+            <img src="img/shop/10.jpg" alt="" class="product-img">
+            <i class="fa fa-eye view" data-id="10"></i>
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <p class="product-title">Vespera Wristwatch</p>
+            <h4 class="product-price">$95.00</h4>
+            <button class="add-cart">BUY NOW</button>
+        </div>
+    </div>
+
+    <script src="in">
+    </script>
+</body>
+</html>

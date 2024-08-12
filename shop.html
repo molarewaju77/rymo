@@ -53,481 +53,448 @@
             </span>
         </nav>
     </div>
+    <div id="search-bar">
+        <input type="text" id="search-input" required style="width: 95.5%;z-index: 8000; height: 40px; position: relative;" placeholder="Search...">
+        <button id="search-button">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" font-size="20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" stroke-miterlimit="10" stroke-width="32" d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"></path>
+                <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
+            </svg>
+        </button>
+    </div>
+    <div id="clear-filters" style="display: none;">
+        <a href="#" id="clear-all-filters-link">Clear All Filters</a>
+    </div>
     <div id="featured">
         <section class="products"> 
             <div class="title">
                 <h2 data-aos="fade-down">Our Products</h2>
                 <p data-aos="fade-down">Here you can check out our newproducts with fair price on rymo.</p>
             </div>
-            <div class="tab_items">
-                <div class="tab_item active_tab" content id="tab_1">
-                    <div class="product-wrapper">
-                        <div class="product" data-id="1" data-aos="fade-up">
-                            <img src="img/shop/1.jpg" alt="" class="product-img"> 
-                            <i class="fa fa-eye view" data-id="1"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Dark Blue T-shirt</p>
-                            <h4 class="product-price">$37.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="2" data-aos="fade-up">
-                            <img src="img/shop/2.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="2"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Echo Canvas</p>
-                            <h4 class="product-price">$60.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="3" data-aos="fade-up">
-                            <img src="img/shop/3.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="2"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Casual Colored Backpack</p>
-                            <h4 class="product-price">$95.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="4" data-aos="fade-up">
-                            <img src="img/shop/4.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="4"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Blue Shoe</p>
-                            <h4 class="product-price">$55.89</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="5" data-aos="fade-up">
-                            <img src="img/shop/5.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="5"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Knit Cap</p>
-                            <h4 class="product-price">$123.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="6" data-aos="fade-up">
-                            <img src="img/shop/6.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="6"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Red Coat</p>
-                            <h4 class="product-price">$140.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="7" data-aos="fade-up">
-                            <img src="img/shop/7.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="7"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Retro Groove Shoe</p>
-                            <h4 class="product-price">$95.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="8" data-aos="fade-up">
-                            <img src="img/shop/8.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="8"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Navy Blue Coat</p>
-                            <h4 class="product-price">$130.80</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="9" data-aos="fade-up">
-                            <img src="img/shop/9.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="9"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Sling Backpack</p>
-                            <h4 class="product-price">$39.50</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="10" data-aos="fade-up">
-                            <img src="img/shop/10.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="10"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Vespera Wristwatch</p>
-                            <h4 class="product-price">$95.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="11" data-aos="fade-up">
-                            <img src="img/shop/11.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="11"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Female Cowboy Hat</p>
-                            <h4 class="product-price">$38.49</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="12" data-aos="fade-up">
-                            <img src="img/shop/12.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="12"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">White Shoes</p>
-                            <h4 class="product-price">$83.99</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                    </div>
-                </div> 
-                <div class="tab_item" content id="tab_2">
-                    <div class="product-wrapper">
-                        <div class="product" data-id="1" data-aos="fade-up">
-                            <img src="img/shop/1.jpg" alt="" class="product-img"> 
-                            <i class="fa fa-eye view" data-id="1"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Dark Blue T-shirt</p>
-                            <h4 class="product-price">$37.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="2" data-aos="fade-up">
-                            <img src="img/shop/2.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="2"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">White Shoes</p>
-                            <h4 class="product-price">$60.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="3" data-aos="fade-up">
-                            <img src="img/shop/3.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="2"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Casual Colored Backpack</p>
-                            <h4 class="product-price">$95.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="4" data-aos="fade-up">
-                            <img src="img/shop/4.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="4"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Blue Shoe</p>
-                            <h4 class="product-price">$55.89</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="13" data-aos="fade-up">
-                            <img src="img/shop/13.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="13"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Elara Wristwatch</p>
-                            <h4 class="product-price">$82.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="14" data-aos="fade-up">
-                            <img src="img/shop/14.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="14"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Quest Canvas</p>
-                            <h4 class="product-price">$75.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="15" data-aos="fade-up">
-                            <img src="img/shop/15.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="15"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Gray Knit Cap</p>
-                            <h4 class="product-price">$50.79</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="16" data-aos="fade-up">
-                            <img src="img/shop/16.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="16"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Purple T-shirt</p>
-                            <h4 class="product-price">$40.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="17" data-aos="fade-up">
-                            <img src="img/shop/17.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="17"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Cityscape Coat</p>
-                            <h4 class="product-price">$120.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="18" data-aos="fade-up">
-                            <img src="img/shop/18.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="18"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Hunker Cap</p>
-                            <h4 class="product-price">$38.78</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="19" data-aos="fade-up">
-                            <img src="img/shop/19.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="19"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Hoddie</p>
-                            <h4 class="product-price">$55.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="20" data-aos="fade-up">
-                            <img src="img/shop/20.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="20"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Long Sleeve</p>
-                            <h4 class="product-price">$75.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                    </div>
+            <div class="product-wrapper">
+                <div class="product" data-id="1" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/1.jpg" alt="" class="product-img"> 
+                    <i class="fa fa-eye view" data-id="1"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Dark Blue T-shirt</p>
+                    <h4 class="product-price">$37.00</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
-                <div class="tab_item" content id="tab_3">
-                    <div class="product-wrapper">
-                        <div class="product" data-id="21" data-aos="fade-up">
-                            <img src="img/shop/21.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="21"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Sweat Shirt </p>
-                            <h4 class="product-price">$75.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="22" data-aos="fade-up">
-                            <img src="img/shop/22.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="22"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Sport Bag</p>
-                            <h4 class="product-price">$50.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="23" data-aos="fade-up">
-                            <img src="img/shop/23.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="23"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Light Green T-shirt</p>
-                            <h4 class="product-price">$42.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="24" data-aos="fade-up">
-                            <img src="img/shop/24.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="24"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">White T-shirt</p>
-                            <h4 class="product-price">$41.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="25" data-aos="fade-up">
-                            <img src="img/shop/25.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="25"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Red T-shirt</p>
-                            <h4 class="product-price">$45.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="26" data-aos="fade-up">
-                            <img src="img/shop/26.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="26"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Green T-shirt</p>
-                            <h4 class="product-price">$48.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="6" data-aos="fade-up">
-                            <img src="img/shop/6.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="6"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Red Coat</p>
-                            <h4 class="product-price">$86.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                        <div class="product" data-id="14" data-aos="fade-up">
-                            <img src="img/shop/14.jpg" alt="" class="product-img">
-                            <i class="fa fa-eye view" data-id="6"></i>
-                            <span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <p class="product-title">Quest Canvas</p>
-                            <h4 class="product-price">$75.00</h4>
-                            <button class="add-cart">BUY NOW</button>
-                        </div>
-                    </div> 
+                <div class="product" data-id="2" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/2.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="2"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Echo Canvas</p>
+                    <h4 class="product-price">$60.00</h4>
+                    <button class="add-cart">BUY NOW</button>
                 </div>
-            </div>  
+                <div class="product" data-id="3" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/3.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="2"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Casual Colored Backpack</p>
+                    <h4 class="product-price">$95.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="4" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/4.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="4"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Blue Shoe</p>
+                    <h4 class="product-price">$55.89</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="5" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/5.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="5"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Knit Cap</p>
+                    <h4 class="product-price">$123.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="6" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/6.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="6"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Red Coat</p>
+                    <h4 class="product-price">$140.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="7" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/7.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="7"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Retro Groove Shoe</p>
+                    <h4 class="product-price">$95.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="8" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/8.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="8"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Navy Blue Coat</p>
+                    <h4 class="product-price">$130.80</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="9" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/9.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="9"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Sling Backpack</p>
+                    <h4 class="product-price">$39.50</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="10" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/10.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="10"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Vespera Wristwatch</p>
+                    <h4 class="product-price">$95.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="11" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/11.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="11"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Female Cowboy Hat</p>
+                    <h4 class="product-price">$38.49</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="12" data-tab-id="1" data-aos="fade-up">
+                    <img src="img/shop/12.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="12"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">White Shoes</p>
+                    <h4 class="product-price">$83.99</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="13" data-tab-id="2"  data-aos="fade-up">
+                    <img src="img/shop/13.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="13"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Elara Wristwatch</p>
+                    <h4 class="product-price">$82.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="14" data-tab-id="2" data-aos="fade-up">
+                    <img src="img/shop/14.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="14"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Quest Canvas</p>
+                    <h4 class="product-price">$75.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="15" data-tab-id="2" data-aos="fade-up">
+                    <img src="img/shop/15.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="15"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Gray Knit Cap</p>
+                    <h4 class="product-price">$50.79</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="16" data-tab-id="2" data-aos="fade-up">
+                    <img src="img/shop/16.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="16"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Purple T-shirt</p>
+                    <h4 class="product-price">$40.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="17" data-tab-id="2" data-aos="fade-up">
+                    <img src="img/shop/17.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="17"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Cityscape Coat</p>
+                    <h4 class="product-price">$120.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="18" data-tab-id="2" data-aos="fade-up">
+                    <img src="img/shop/18.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="18"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Hunker Cap</p>
+                    <h4 class="product-price">$38.78</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="19" data-tab-id="2" data-aos="fade-up">
+                    <img src="img/shop/19.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="19"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Hoddie</p>
+                    <h4 class="product-price">$55.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="20" data-tab-id="2" data-aos="fade-up">
+                    <img src="img/shop/20.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="20"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Long Sleeve</p>
+                    <h4 class="product-price">$75.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="39" data-tab-id="3"  data-aos="fade-up">
+                    <img src="img/shoes/8.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="39"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </span>
+                    <p class="product-title">Casual Shoes</p>
+                    <h4 class="product-price">$65.89</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="29" data-tab-id="3"  data-aos="fade-up">
+                    <img src="img/featured/3.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="29"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Casual Backpack</p>
+                    <h4 class="product-price">$95.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="23" data-tab-id="3" data-aos="fade-up">
+                    <img src="img/shop/23.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="23"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Light Green T-shirt</p>
+                    <h4 class="product-price">$42.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="24" data-tab-id="3" data-aos="fade-up">
+                    <img src="img/shop/24.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="24"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">White T-shirt</p>
+                    <h4 class="product-price">$41.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="22" data-tab-id="3"  data-aos="fade-up">
+                    <img src="img/shop/22.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="22"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Sport Bag</p>
+                    <h4 class="product-price">$50.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="25" data-tab-id="3"  data-aos="fade-up">
+                    <img src="img/shop/25.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="25"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Red T-shirt</p>
+                    <h4 class="product-price">$45.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="26" data-tab-id="3"  data-aos="fade-up">
+                    <img src="img/shop/26.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="26"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Green T-shirt</p>
+                    <h4 class="product-price">$48.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="21" data-tab-id="3"  data-aos="fade-up">
+                    <img src="img/shop/21.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="21"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Sweat Shirt </p>
+                    <h4 class="product-price">$75.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+            </div>
         </section>
     </div>
-    <div class="tabs_container tab_shop">
-        <div class="tab_btn active_tab" data-target="#tab_1">1</div>
-        <div class="tab_btn" data-target="#tab_2">2</div>
-        <div class="tab_btn" data-target="#tab_3">3</div>
+    <div class="tabs" id="tab-buttons">
+        <button class="tab-button active" data-tab-id="1">1</button>
+        <button class="tab-button" data-tab-id="2">2</button>
+        <button class="tab-button" data-tab-id="3">3</button>
     </div>
+    <div id="no-product-found" style="display: none;">
+        <p>No product found. <span><a href="#" id="clear-filter-link">Clear filter</a></span></p>
+        <p>Suggested products:</p>
+    </div>
+    
+    <div class="product-wrapper suggested" style="display: none;">
+        <div class="product" data-id="21" data-aos="fade-up">
+            <img src="img/shop/21.jpg" alt="" class="product-img">
+            <i class="fa fa-eye view" data-id="21"></i>
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <p class="product-title">Sweat Shirt </p>
+            <h4 class="product-price">$75.00</h4>
+            <button class="add-cart">BUY NOW</button>
+        </div>
+    </div>
+    
+    
     <footer>
         <div class="text" data-aos="fade-down">
             <div class="wrapper one">

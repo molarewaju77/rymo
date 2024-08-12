@@ -218,9 +218,6 @@ body.show::before
   height: 100vh;
   overflow-y: hidden;
 }
-body.fixedbg
-{
-}
  nav 
 {
   display: flex;
@@ -500,7 +497,7 @@ nav .icon-wrapper i
 {
   padding-top: 17px;
 }
-.products .product-wrapper .product
+.product-wrapper .product
 {
   width: 300px;
   text-align: center;
@@ -814,28 +811,29 @@ footer .copyright span
 }
 
 /*PAGINATION STYLES*/
-.tabs_container
+.tab-button.active {
+  box-shadow: inset var( 1px 1px 10px rgba(0, 0, 0, 0.2));
+background-color: #F5F5F5 !important;
+}
+.tabs
 {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
-.tab_btn
+.tabs .tab-button
 {
-  padding:13px 25px;
-  border-radius: 0.5rem;
+  height: 50px;
+  width: 50px;
+  padding: initial;
+  border-radius: 50%;
+  background-color: initial;
+  color: black;
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
   transition: 1000ms ease;
   font-family: Nunito, Sans-Serif;
-}
-.tabs_container .tab_btn.active_tab,
-.tabs_container .tab_btn:hover {
-  box-shadow: inset var(--shadow-3);
-}
-.tab_item:not(.active_tab) {
-  display: none;
 }
 /*PAGINATION STYLES END*/
 
@@ -994,15 +992,15 @@ footer .copyright span
   border-bottom: 1px solid black;
   font-size: 16px;
 }
- input::placeholder
+#form-container  input::placeholder
 {
  
   font-size: 16px;
   color:rgba(0, 0, 0, 0.87);
   transition: all 0.2s;
 }
-input:focus::placeholder,
-input:not(:placeholder-shown)::placeholder
+#form-container input:focus::placeholder,
+#form-container input:not(:placeholder-shown)::placeholder
 {
   font-size: 14px;
   color: #333;
@@ -1069,6 +1067,34 @@ input:not(:placeholder-shown)::placeholder
 
 
 /*============= END==========*/
+
+/*============= PRODUCT SEARCH BAR==========
+#search-bar
+{
+  height: 100px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;z-index: 9000   !important; 
+
+  width: 100%;
+}
+#search-bar input
+{
+  width: 95.5%;
+  height: 40px;
+  position: relative; 
+}
+#search-bar button
+{
+  position: absolute;
+  right: 0;
+
+  padding: 0;
+}
+
+/*============= PRODUCT SEARCH BAR END==========*/
 
 
 
