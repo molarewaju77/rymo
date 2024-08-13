@@ -1084,10 +1084,13 @@ background-color: #F5F5F5 !important;
   background-color: white;
   border-bottom: 1px solid gray;
   width: 100%;
+  transform: translateY(-100%);
+  transition: 0.3s all;
 }
 #search-bar.active
 {
-  display: block !important;
+  transform: translateY(0);
+  display: flex;
 }
 #search-bar input
 {

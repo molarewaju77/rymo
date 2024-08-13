@@ -844,14 +844,6 @@ window.addEventListener('pageshow', () => {
 });
 
 
-function showsearchBar () {
-    let Search_icon = document.querySelector('.search-icon');
-    var search_bar = document.querySelector('#search-bar');
-
-    Search_icon.addEventListener("click", () => {
-        search_bar.classList.add('active');
-    })
-}
 // Function to show products for the selected tab
 function showTabProducts(tabId) {
     const products = document.querySelectorAll('.product-wrapper:not(.suggested) .product');
@@ -865,7 +857,20 @@ function showTabProducts(tabId) {
         }
     });
 }
+document.querySelector('.search-icon').addEventListener('click', function(event) {
+    event.stopPropagation();
+    document.getElementById('search-bar').classList.add('active');
+    document.getElementById('search-input').focus();  // Focus the input field
+});
 
+document.addEventListener('click', function(event) {
+    const searchBar = document.getElementById('search-bar');
+    const searchIcon = document.querySelector('.search-icon');
+
+    if (!searchBar.contains(event.target) && !searchIcon.contains(event.target)) {
+        searchBar.classList.remove('active');
+    }
+});
     // Function to show products matching the search term
     function searchProducts(query) {
     const products = document.querySelectorAll('.product-wrapper:not(.suggested) .product');
@@ -917,11 +922,19 @@ function showTabProducts(tabId) {
     
     // Add event listener to the search button
     document.getElementById('search-button').addEventListener('click', function() {
-    const query = document.getElementById('search-input').value;
-    searchProducts(query);
-    document.getElementById('tab-buttons').style.display = 'none';
+        const query = document.getElementById('search-input').value.trim();
+        
+        if (query === '') {
+            document.getElementById('search-input').focus();  // Focus the input field if it's empty
+            return;
+        }
+
+        searchProducts(query);
+        document.getElementById('tab-buttons').style.display = 'none';
+        
+        // Remove the active class from the search bar
+        document.getElementById('search-bar').classList.remove('active');
     });
-    
     // Add event listener to the clear filters link
     document.getElementById('clear-filter-link').addEventListener('click', function(event) {
     event.preventDefault();
