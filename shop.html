@@ -37,7 +37,7 @@
                     <li><a href="">About Us</a></li>
                 </ul>
                 <div class="icon-wrapper">
-                    <i>
+                    <i class="search-icon" style="cursor: pointer;">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
                     </i>
                     <div class="cart-count-wrapper">
@@ -54,7 +54,7 @@
         </nav>
     </div>
     <div id="search-bar">
-        <input type="text" id="search-input" required style="width: 95.5%;z-index: 8000; height: 40px; position: relative;" placeholder="Search...">
+        <input type="text" id="search-input" required placeholder="Search...">
         <button id="search-button">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" font-size="20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path fill="none" stroke-miterlimit="10" stroke-width="32" d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"></path>
@@ -62,14 +62,76 @@
             </svg>
         </button>
     </div>
-    <div id="clear-filters" style="display: none;">
-        <a href="#" id="clear-all-filters-link">Clear All Filters</a>
-    </div>
     <div id="featured">
         <section class="products"> 
             <div class="title">
                 <h2 data-aos="fade-down">Our Products</h2>
                 <p data-aos="fade-down">Here you can check out our newproducts with fair price on rymo.</p>
+            </div>
+            <div id="clear-filters">
+                <a href="#" id="clear-all-filters-link">Clear Filter</a>
+            </div>
+            <div id="no-product-found">
+                <p>No product found. <span><a href="#" id="clear-filter-link">Clear all filter</a></span></p>
+                <h3 style="margin: 0 !important; padding: 0 !important;">Suggested products:</h3>
+            </div>
+            <div class="product-wrapper suggested" style="display: none;">
+                <div class="product" data-id="21" data-aos="fade-up">
+                    <img src="img/shop/21.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="21"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Sweat Shirt </p>
+                    <h4 class="product-price">$75.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="21" data-aos="fade-up">
+                    <img src="img/shop/21.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="21"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Sweat Shirt </p>
+                    <h4 class="product-price">$75.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="21" data-aos="fade-up">
+                    <img src="img/shop/21.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="21"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Sweat Shirt </p>
+                    <h4 class="product-price">$75.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
+                <div class="product" data-id="21" data-aos="fade-up">
+                    <img src="img/shop/21.jpg" alt="" class="product-img">
+                    <i class="fa fa-eye view" data-id="21"></i>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="product-title">Sweat Shirt </p>
+                    <h4 class="product-price">$75.00</h4>
+                    <button class="add-cart">BUY NOW</button>
+                </div>
             </div>
             <div class="product-wrapper">
                 <div class="product" data-id="1" data-tab-id="1" data-aos="fade-up">
@@ -471,27 +533,6 @@
         <button class="tab-button active" data-tab-id="1">1</button>
         <button class="tab-button" data-tab-id="2">2</button>
         <button class="tab-button" data-tab-id="3">3</button>
-    </div>
-    <div id="no-product-found" style="display: none;">
-        <p>No product found. <span><a href="#" id="clear-filter-link">Clear filter</a></span></p>
-        <p>Suggested products:</p>
-    </div>
-    
-    <div class="product-wrapper suggested" style="display: none;">
-        <div class="product" data-id="21" data-aos="fade-up">
-            <img src="img/shop/21.jpg" alt="" class="product-img">
-            <i class="fa fa-eye view" data-id="21"></i>
-            <span>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-            <p class="product-title">Sweat Shirt </p>
-            <h4 class="product-price">$75.00</h4>
-            <button class="add-cart">BUY NOW</button>
-        </div>
     </div>
     
     
