@@ -226,7 +226,7 @@ body.show::before
   padding: 0 40px;
   justify-content: space-between;
   height: 90px;
-  border-bottom: 1px solid rgb(173, 167, 167);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   align-items: center;
   background-color: white;
   position: fixed;
@@ -795,7 +795,7 @@ footer .copyright span
 /*shop styles*/
 #featured
 {
-  padding: 90px 0 60px 0;
+  padding: 90px 0 20px 0;
   margin-top: 80px;
 }
 #featured .products .title,
@@ -821,7 +821,7 @@ background-color: #F5F5F5 !important;
 {
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  padding: 10px 0 40px 0;
 }
 .tabs .tab-button
 {
@@ -1075,14 +1075,13 @@ background-color: #F5F5F5 !important;
 {
   width: 100% !important;
   position: fixed;
-  z-index: 600;
+  z-index: 60000;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 105px;
   overflow: hidden;
   background-color: white;
-  border-bottom: 1px solid gray;
   width: 100%;
   transform: translateY(-100%);
   transition: 0.3s all;
@@ -1142,7 +1141,7 @@ background-color: #F5F5F5 !important;
 #clear-filters a 
 {
   color:#5F56B5;
-  padding: 5px 0 0 0;
+  padding: 10px 0 0 0;
   text-decoration: none;
 }
 #no-product-found
@@ -1570,6 +1569,19 @@ padding: 0 75px;
     margin: 0 auto;
   }
   /*SEARCH BAR END*/
+
+  /*PAGINATION STYLES*/
+  .tab-button.active {
+  background-color: #F5F5F5 !important;
+  }
+  .tabs
+  {
+    display: flex;
+    width: 90%;
+    justify-content: right;
+    padding: 20px 0 40px 0;
+  }
+  /*PAGINATION STYLES END*/
 
 }
 

@@ -12,6 +12,15 @@
     <title>rymo e-commerce</title>
 </head>
 <body>
+    <div id="search-bar">
+        <input type="text" id="search-input" required placeholder="Search...">
+        <button id="search-button">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" font-size="20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" stroke-miterlimit="10" stroke-width="32" d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"></path>
+                <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
+            </svg>
+        </button>
+    </div>
     <div id="section1">
         <div id="sidebar">
             <ul>
@@ -37,11 +46,11 @@
                     <li><a href="">About Us</a></li>
                 </ul>
                 <div class="icon-wrapper">
-                    <i>
+                    <i class="search-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
                     </i>
                     <div class="cart-count-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
                         stroke-linejoin="round" class=" feather-shopping-bag" id="cart-icon"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 
                         0"></path></svg>
                         <span id="cart-count">0</span>
