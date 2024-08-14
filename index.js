@@ -965,7 +965,7 @@
     document.getElementById('tab-buttons').style.display = 'none';
     }
     });
-
+    
     // Add event listener to the clear filters link
     document.getElementById('clear-filter-link').addEventListener('click', function(event) {
     event.preventDefault();

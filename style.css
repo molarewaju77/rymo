@@ -952,7 +952,7 @@ background-color: #F5F5F5 !important;
 
 
 
-/*=============LOGIN/SIGNIN STYLES==========*
+/*=============LOGIN/SIGNIN STYLES==========*/
 
 .log-container 
 {
@@ -1576,9 +1576,6 @@ padding: 0 75px;
   }
   .tabs
   {
-    display: flex;
-    width: 90%;
-    justify-content: right;
     padding: 20px 0 40px 0;
   }
   /*PAGINATION STYLES END*/
