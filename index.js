@@ -19,7 +19,7 @@
             });
         });
     
-    // Example product data
+    // PRODUCTS ARRAY
     const products = {
         "1": {
             "name": "Men's Fashion T Shirt",
